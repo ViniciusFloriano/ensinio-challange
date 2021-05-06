@@ -7,7 +7,7 @@ const Heading = styled('a').attrs<HeadingProps>(({ level = 1 }) => ({
   as: `h${level}`,
 }))<HeadingProps>`
   ${({
-    color = 'black',
+    color = 'white',
     size = 'normal',
     fontWeight = 700,
     lineHeight = 1.5,

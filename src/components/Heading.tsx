@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+
 import { HeadingProps } from '../interfaces/stylesInterfaces';
 import { defaultTheme } from '../themes';
 

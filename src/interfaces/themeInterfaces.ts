@@ -1,9 +1,12 @@
 export interface ThemeProps {
   colors: {
-    white?: string;
-    black?: string;
-    gray?: string;
-    lightGray?: string;
+    primary?: string;
+    secondary?: string;
+    textPrimary?: string;
+    textSecondary?: string;
+    backgroundPrimary?: string;
+    backgroundSecondary?: string;
+    headerBackground?: string;
   };
   sizes: {
     xsmall: string | number;

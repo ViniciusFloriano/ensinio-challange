@@ -1,15 +1,20 @@
 import { StrictMode } from 'react';
 import { render } from 'react-dom';
 
-import GlobalStyle from './assets/styles/global';
+import { ThemeProvider } from 'styled-components';
+
 import Header from './components/Header';
 import Routes from './routes';
+import GlobalStyle from './styles/global';
+import defaultTheme from './styles/themes';
 
 render(
   <StrictMode>
-    <Header />
-    <Routes />
-    <GlobalStyle />
+    <ThemeProvider theme={defaultTheme}>
+      <Header />
+      <Routes />
+      <GlobalStyle />
+    </ThemeProvider>
   </StrictMode>,
   document.getElementById('root')
 );

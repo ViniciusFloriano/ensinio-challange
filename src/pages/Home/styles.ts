@@ -4,7 +4,7 @@ const HeaderContainer = styled('div')`
   width: 100%;
   height: 100vh;
   max-height: 900px;
-  background: linear-gradient(79.95deg, #5f41d9 2.25%, #41b5d9 100.27%);
+  background: ${(props) => props.theme.colors.backgroundPrimary};
 
   #background-icons {
     z-index: 1;

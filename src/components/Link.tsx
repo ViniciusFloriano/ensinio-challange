@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import defaultTheme from '../assets/styles/themes';
 import { HeadingProps } from '../interfaces/stylesInterfaces';
 
-const Heading = styled('h1').attrs<HeadingProps>(({ level = 1 }) => ({
+const Heading = styled('a').attrs<HeadingProps>(({ level = 1 }) => ({
   as: `h${level}`,
 }))<HeadingProps>`
   ${({

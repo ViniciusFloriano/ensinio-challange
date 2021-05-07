@@ -3,10 +3,15 @@ export interface ThemeProps {
     primary?: string;
     secondary?: string;
     textPrimary?: string;
+    textPrimaryHover?: string;
     textSecondary?: string;
     backgroundPrimary?: string;
     backgroundSecondary?: string;
     headerBackground?: string;
+    iconsSecondary?: string;
+    buttonBorder?: string;
+    buttonHoverBorder?: string;
+    buttonHoverBackColor?: string;
   };
   sizes: {
     xsmall: string | number;

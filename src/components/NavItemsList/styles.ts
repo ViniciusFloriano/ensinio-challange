@@ -16,7 +16,7 @@ const NavItemsListContainer = styled('header')`
   }
 
   .splitter {
-    background-color: #609adb;
+    background-color: ${(props) => props.theme.colors.iconsSecondary};
     width: 1px;
     line-height: 1.5rem;
   }

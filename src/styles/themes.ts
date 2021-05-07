@@ -4,11 +4,16 @@ const defaultTheme: ThemeProps = {
   colors: {
     primary: '',
     secondary: '',
-    textPrimary: '',
+    textPrimary: '#fff',
+    textPrimaryHover: '#bbb',
     textSecondary: '',
     backgroundPrimary:
       'linear-gradient(79.95deg, #5f41d9 2.25%, #41b5d9 100.27%)',
-    backgroundSecondary: '',
+    backgroundSecondary: '#fff',
+    iconsSecondary: '#609adb',
+    buttonBorder: '#a4c6e9',
+    buttonHoverBorder: '#bbb',
+    buttonHoverBackColor: '#a4c6e9',
   },
   sizes: {
     xsmall: '1rem',

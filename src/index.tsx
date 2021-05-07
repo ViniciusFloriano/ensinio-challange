@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 
 import { ThemeProvider } from 'styled-components';
 
-import Header from './components/Header';
+import NavBar from './components/NavBar';
 import Routes from './routes';
 import GlobalStyle from './styles/global';
 import defaultTheme from './styles/themes';
@@ -11,7 +11,7 @@ import defaultTheme from './styles/themes';
 render(
   <StrictMode>
     <ThemeProvider theme={defaultTheme}>
-      <Header />
+      <NavBar />
       <Routes />
       <GlobalStyle />
     </ThemeProvider>

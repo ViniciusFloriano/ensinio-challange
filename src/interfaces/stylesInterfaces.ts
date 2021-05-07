@@ -34,3 +34,7 @@ export interface LinkProps {
   lineHeight?: string | number;
   letterSpacing?: string | number;
 }
+
+export interface NavBarProps {
+  navbarBgActive: boolean;
+}

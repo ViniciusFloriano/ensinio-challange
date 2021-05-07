@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import LogoImage from '../../assets/icons/logo.svg';
 import ProfileIcon from '../../assets/icons/profile';
 import Container from '../Container';
 import NavItemsList, { NavItemPropsExtended } from '../NavItemsList/index';
-import HeaderContainer from './styles';
+import NavBarContainer from './styles';
 
 const EmptyComponent: React.FC = () => <div />;
 
@@ -22,16 +22,30 @@ const rightItems: NavItemPropsExtended[] = [
   { key: '13', dropdownComponent: EmptyComponent, text: 'PT' },
 ];
 
-const Header: React.FC = () => (
-  <HeaderContainer>
-    <Container>
-      <NavItemsList
-        centerItems={centerItems}
-        logo={LogoImage}
-        rightItems={rightItems}
-      />
-    </Container>
-  </HeaderContainer>
-);
+const NavBar: React.FC = () => {
+  const [navbarBgActive, setNavbarBgActive] = useState(false);
 
-export default Header;
+  function changeBackground() {
+    if (window.scrollY >= 15) {
+      setNavbarBgActive(true);
+    } else {
+      setNavbarBgActive(false);
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground);
+
+  return (
+    <NavBarContainer navbarBgActive={navbarBgActive}>
+      <Container>
+        <NavItemsList
+          centerItems={centerItems}
+          logo={LogoImage}
+          rightItems={rightItems}
+        />
+      </Container>
+    </NavBarContainer>
+  );
+};
+
+export default NavBar;

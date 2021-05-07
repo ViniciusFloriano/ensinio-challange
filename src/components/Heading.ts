@@ -7,6 +7,7 @@ const Heading = styled('h1').attrs<HeadingProps>(({ level = 1 }) => ({
   as: `h${level}`,
 }))<HeadingProps>`
   ${({
+    fontFamily = 'fontPrimary',
     color = 'textPrimary',
     size = 'normal',
     fontWeight = 700,
@@ -15,6 +16,7 @@ const Heading = styled('h1').attrs<HeadingProps>(({ level = 1 }) => ({
     font-size: ${defaultTheme.sizes[size]};
     color: ${defaultTheme.colors[color]};
     font-weight: ${fontWeight};
+    font-family: ${defaultTheme.fonts[fontFamily]};
     line-height: ${lineHeight};
   `}
 `;

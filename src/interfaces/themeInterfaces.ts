@@ -21,4 +21,8 @@ export interface ThemeProps {
     xlarge: string | number;
     xxlarge: string | number;
   };
+  fonts: {
+    fontPrimary: string;
+    fontSecondary: string;
+  };
 }

@@ -6,7 +6,7 @@ const defaultTheme: ThemeProps = {
     secondary: '',
     textPrimary: '#fff',
     textPrimaryHover: '#bbb',
-    textSecondary: '',
+    textSecondary: '#D6D4F6',
     backgroundPrimary:
       'linear-gradient(79.95deg, #5f41d9 2.25%, #41b5d9 100.27%)',
     backgroundSecondary: '#fff',
@@ -22,6 +22,10 @@ const defaultTheme: ThemeProps = {
     large: '2.4rem',
     xlarge: '3.2rem',
     xxlarge: '4rem',
+  },
+  fonts: {
+    fontPrimary: 'Inter',
+    fontSecondary: 'Be Vietnam',
   },
 };
 

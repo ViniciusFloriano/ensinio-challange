@@ -8,7 +8,7 @@ const Heading = styled('p')<HeadingProps>`
     color = 'textPrimary',
     fontFamily = 'fontPrimary',
     size = 'normal',
-    fontWeight = 700,
+    fontWeight = 300,
     lineHeight = 1.5,
   }) => css`
     font-size: ${defaultTheme.sizes[size]};

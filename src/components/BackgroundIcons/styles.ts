@@ -13,12 +13,12 @@ const Container = styled('div')`
 
   img {
     position: absolute;
-    height: 88.5px;
-    width: 88.5px;
+    height: 105.5px;
+    width: 105.5px;
   }
 
   img:nth-child(1) {
-    top: -5px;
+    top: -22px;
     left: 5%;
   }
 
@@ -31,18 +31,20 @@ const Container = styled('div')`
   }
 
   img:nth-child(3) {
-    top: -5px;
+    top: -22px;
     right: 6%;
   }
 
   img:nth-child(4) {
-    top: 25px;
+    top: 13px;
     left: 45%;
+    height: 88.5px;
+    width: 88.5px;
   }
 
   img:nth-child(5) {
     top: -35px;
-    right: 31%;
+    right: 20%;
     height: 70.5px;
     width: 70.5px;
   }

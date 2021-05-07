@@ -6,8 +6,8 @@ const NavItemsListContainer = styled('header')`
   justify-content: space-between;
   width: 100%;
 
-  img {
-    height: 44px;
+  > img {
+    height: 46px;
   }
 
   div {
@@ -15,10 +15,19 @@ const NavItemsListContainer = styled('header')`
     align-items: center;
   }
 
+  #nav-center-items ul li a {
+    padding: 0 1.6rem;
+  }
+
+  #nav-right-items ul li a {
+    padding: 0.6rem 2rem;
+  }
+
   .splitter {
     background-color: ${(props) => props.theme.colors.iconsSecondary};
     width: 1px;
     line-height: 1.5rem;
+    margin: 0 1rem;
   }
 
   ul {

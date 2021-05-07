@@ -17,9 +17,9 @@ const defaultTheme: ThemeProps = {
   },
   sizes: {
     xsmall: '1rem',
-    small: '1.2rem',
+    small: '1.1rem',
     normal: '1.6rem',
-    large: '2.4rem',
+    large: '2.8rem',
     xlarge: '3.2rem',
     xxlarge: '4rem',
   },

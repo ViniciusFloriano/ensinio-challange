@@ -13,6 +13,11 @@ const GlobalStyle = createGlobalStyle`
     font: 14px Inter, sans-serif;
   }
 
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
   button {
     cursor: pointer;
   }

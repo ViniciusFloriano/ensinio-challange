@@ -20,11 +20,7 @@ export const HeaderContainer = styled('div')`
   }
 `;
 
-export const ContentContainer = styled('div')`
+export const MainContainer = styled('div')`
   width: 100%;
   height: 100%;
-
-  > div {
-    padding: 6rem 0;
-  }
 `;

@@ -7,6 +7,10 @@ const defaultTheme: ThemeProps = {
     textPrimary: '#fff',
     textPrimaryHover: '#bbb',
     textSecondary: '#D6D4F6',
+    textTertiary: '#130C25',
+    textTertiaryOpacity: '#423D51',
+    linkPrimary: '#5F41D9',
+    linkPrimaryOpacity: '#432E98',
     backgroundPrimary:
       'linear-gradient(79.95deg, #5f41d9 2.25%, #41b5d9 100.27%)',
     backgroundSecondary: '#fff',

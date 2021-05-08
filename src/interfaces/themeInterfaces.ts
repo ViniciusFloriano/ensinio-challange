@@ -5,6 +5,10 @@ export interface ThemeProps {
     textPrimary?: string;
     textPrimaryHover?: string;
     textSecondary?: string;
+    textTertiary?: string;
+    textTertiaryOpacity?: string;
+    linkPrimary?: string;
+    linkPrimaryOpacity?: string;
     backgroundPrimary?: string;
     backgroundSecondary?: string;
     headerBackground?: string;

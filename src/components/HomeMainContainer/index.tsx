@@ -41,7 +41,7 @@ const HomeMainContainer: React.FC = () => {
           level={3}
           size="xsmall"
         >
-          Conheça alguns dos nossos recursos
+          Conheça alguns dos nossos recursos ⚡
         </Heading>
       </div>
 

@@ -24,7 +24,7 @@ interface TranslationContextProps {
 const Context = createContext<TranslationContextProps>({
   loading: true,
   error: false,
-  currentLang: 'es',
+  currentLang: 'pt',
   setCurrentLang: () => {},
   t: (title: string) => title,
   translationData: [],
@@ -36,7 +36,7 @@ function useTranslation() {
   const [translationData, setTranslationData] = useState<TranslationProps[]>(
     []
   );
-  const [currentLang, setCurrentLang] = useState<LanguagesType>('es');
+  const [currentLang, setCurrentLang] = useState<LanguagesType>('pt');
 
   useEffect(() => {
     getTranslations()
@@ -44,18 +44,15 @@ function useTranslation() {
         setTranslationData(data);
         setLoading(false);
       })
-      .catch((data) => {
-        window.console.log(data);
+      .catch(() => {
         setError(true);
       });
   }, []);
 
   function t(title: string) {
-    window.console.log(translationData);
     const translatedText = translationData.find(
       (td) => td.title.toLowerCase() === title.toLowerCase()
     );
-    window.console.log(translatedText);
 
     if (!translatedText) {
       return 'Translation not find';

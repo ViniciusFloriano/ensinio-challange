@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 
-import { HeadingProps } from '../interfaces/stylesInterfaces';
+import { TextProps } from '../interfaces/stylesInterfaces';
 import defaultTheme from '../styles/themes';
 
-const Heading = styled('p')<HeadingProps>`
+const Text = styled('p')<TextProps>`
   ${({
     color = 'textPrimary',
     fontFamily = 'fontPrimary',
@@ -19,4 +19,4 @@ const Heading = styled('p')<HeadingProps>`
   `}
 `;
 
-export default Heading;
+export default Text;

@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 
+import ArrowRight from '../../assets/icons/arrow-right.svg';
 import IconFolder from '../../assets/icons/icon-folder.svg';
 import IconPlay from '../../assets/icons/icon-play.svg';
 import IconTrilhas from '../../assets/icons/icon-trilhas.svg';
+import Line from '../../assets/icons/line.svg';
 import RocketIcon from '../../assets/icons/rocket.svg';
 import { TranslationContext } from '../../context/TranslationContext';
 import { ItemProps } from '../../interfaces/requestInterfaces';
@@ -36,12 +38,13 @@ const HomeMainContainer: React.FC = () => {
           level={3}
           size="xsmall"
         >
+          <img alt="Line" src={Line} />
           {t('We think about every detail')}
         </Heading>
         <Heading
           color="textTertiaryOpacity"
           fontWeight={400}
-          level={3}
+          level={4}
           size="xsmall"
         >
           {t('Discover some of our resources')} ⚡
@@ -77,6 +80,7 @@ const HomeMainContainer: React.FC = () => {
           size="xsmall"
         >
           {t('See more')}
+          <img alt="Arrow Right" src={ArrowRight} />
         </Link>
       </div>
     </Container>

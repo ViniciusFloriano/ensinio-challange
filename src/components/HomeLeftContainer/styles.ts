@@ -16,6 +16,7 @@ const Container = styled('div')`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
     img {
       margin-bottom: -2px;
       margin-right: 20px;

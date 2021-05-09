@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import IconFolder from '../../assets/icons/icon-folder.svg';
 import IconPlay from '../../assets/icons/icon-play.svg';
 import IconTrilhas from '../../assets/icons/icon-trilhas.svg';
 import RocketIcon from '../../assets/icons/rocket.svg';
+import { TranslationContext } from '../../context/TranslationContext';
 import { ItemProps } from '../../interfaces/requestInterfaces';
-import getItems from '../../services/requests';
+import { getItems } from '../../services/requests';
 import Card from '../Card';
 import Heading from '../Heading';
 import Link from '../Link';
@@ -15,6 +16,7 @@ import Container from './styles';
 const icons = [IconTrilhas, IconPlay, IconFolder];
 
 const HomeMainContainer: React.FC = () => {
+  const { t, currentLang } = useContext(TranslationContext);
   const [items, setItems] = useState<ItemProps[]>([]);
 
   useEffect(() => {
@@ -22,6 +24,7 @@ const HomeMainContainer: React.FC = () => {
       setItems(newItems);
     });
   }, []);
+
   return (
     <Container>
       <div id="header">
@@ -33,7 +36,7 @@ const HomeMainContainer: React.FC = () => {
           level={3}
           size="xsmall"
         >
-          PENSAMOS EM CADA DETALHE
+          {t('We think about every detail')}
         </Heading>
         <Heading
           color="textTertiaryOpacity"
@@ -41,29 +44,31 @@ const HomeMainContainer: React.FC = () => {
           level={3}
           size="xsmall"
         >
-          Conheça alguns dos nossos recursos ⚡
+          {t('Discover some of our resources')} ⚡
         </Heading>
       </div>
 
       <Heading color="textTertiary" fontWeight={500} lineHeight="1.2">
-        Queremos que o aluno se sinta confortável enquanto aprende
+        {t('We want the student to feel comfortable while learning')}
       </Heading>
 
       <div id="cards">
         {items.map((data) => (
           <Card
-            description={data.description.pt}
+            description={data.description[currentLang]}
             icon={icons[data.id - 1]}
             key={data.id}
-            title={data.title.pt}
+            title={data.title[currentLang]}
           />
         ))}
       </div>
+
       <hr />
+
       <div id="footer">
         <Text color="textTertiaryOpacity" fontWeight={500} size="xsmall">
           <img alt="Rocket" src={RocketIcon} />
-          Veja todos os outros recursos disponíveis para te ajudar
+          {t('See all other resources available to help you')}
         </Text>
         <Link
           color="linkPrimary"
@@ -71,7 +76,7 @@ const HomeMainContainer: React.FC = () => {
           href="#vermais"
           size="xsmall"
         >
-          Ver mais
+          {t('See more')}
         </Link>
       </div>
     </Container>

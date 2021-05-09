@@ -21,6 +21,18 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  @media(max-width: 700px) {
+    :root {
+      font-size: 80%;
+    }
+  }
+
+  @media(max-width: 500px) {
+    :root {
+      font-size: 70%;
+    }
+  }
 `;
 
 export default GlobalStyle;

@@ -40,6 +40,26 @@ const NavItemsListContainer = styled('header')`
   ul li {
     display: inline-block;
   }
+
+  @media (max-width: 1320px) {
+    #nav-center-items ul li a {
+      padding: 0 1.4rem;
+    }
+
+    #nav-right-items ul li a {
+      padding: 0.6rem 1rem;
+    }
+  }
+
+  @media (max-width: 1120px) {
+    > div {
+      flex-direction: column;
+      display: none;
+    }
+    ul li {
+      display: block;
+    }
+  }
 `;
 
 export default NavItemsListContainer;

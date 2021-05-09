@@ -17,16 +17,45 @@ export const NavItemA = styled('a')`
     width: 1.3rem;
     vertical-align: bottom;
   }
+
   &:hover #icon svg {
     stroke: ${(props) => props.theme.colors.textPrimaryHover};
   }
 
-  #dropdown svg {
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .dropdown svg {
     margin-left: 0.4rem;
     height: 0.55rem;
   }
-  &:hover #dropdown svg {
+
+  &:hover .dropdown > svg {
     fill: ${(props) => props.theme.colors.textPrimaryHover};
+  }
+
+  .dropdown-content {
+    position: absolute;
+    background-color: ${(props) => props.theme.colors.backgroundPrimary};
+    margin-left: 1rem;
+    margin-top: -1000px;
+    padding-top: 15px;
+    visibility: hide;
+    opacity: 0;
+    transition: opacity 1.2s;
+  }
+
+  &:hover .dropdown-content {
+    margin-top: 0;
+    display: flex;
+    opacity: 1;
+    transition: opacity 1.2s;
   }
 `;
 
@@ -37,6 +66,7 @@ export const NavItemButton = styled('a')`
   border: 1px solid ${(props) => props.theme.colors.buttonBorder};
   border-radius: 1.5rem;
   padding: 0.6rem 1.6rem !important;
+
   &:hover {
     border-color: ${(props) => props.theme.colors.buttonHoverBorder};
     background-color: ${(props) => props.theme.colors.buttonHoverBackColor};

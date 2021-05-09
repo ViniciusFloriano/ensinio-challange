@@ -2,8 +2,8 @@ import { ThemeProps } from '../interfaces/themeInterfaces';
 
 const defaultTheme: ThemeProps = {
   colors: {
-    primary: '',
-    secondary: '',
+    primary: '#5f41d9',
+    secondary: '#41b5d9',
     textPrimary: '#fff',
     textPrimaryHover: '#bbb',
     textSecondary: '#D6D4F6',

@@ -46,6 +46,12 @@ const Container = styled('div')`
       }
     }
   }
+
+  @media (max-width: 1120px) {
+    width: 90%;
+    max-width: 600px;
+    margin-left: 0;
+  }
 `;
 
 export default Container;

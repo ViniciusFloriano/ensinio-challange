@@ -1,20 +1,86 @@
 import React, { useContext, useState } from 'react';
 
+import BrazilIcon from '../../assets/icons/brazil.svg';
+import EadIcon from '../../assets/icons/ead.svg';
+import AppIcon from '../../assets/icons/icon-app.svg';
+import GamificationIcon from '../../assets/icons/icon-gamification.svg';
+import SocialIcon from '../../assets/icons/icon-social.svg';
 import LogoImage from '../../assets/icons/logo.svg';
 import ProfileIcon from '../../assets/icons/profile';
+import SpainIcon from '../../assets/icons/spain.svg';
+import UsaIcon from '../../assets/icons/usa.svg';
 import { TranslationContext } from '../../context/TranslationContext';
 import Container from '../Container';
+import LanguagesDropdown from '../LanguagesDropdown';
+import { LanguagesDropdownItemProps } from '../LanguagesDropdownItem';
 import NavItemsList, { NavItemPropsExtended } from '../NavItemsList/index';
+import SolutionsDropdown from '../SolutionsDropdown';
+import { SolutionsDropdownItemProps } from '../SolutionsDropdownItem';
 import NavBarContainer from './styles';
 
-const EmptyComponent: React.FC = () => <div />;
-
 const NavBar: React.FC = () => {
-  const { t, currentLang } = useContext(TranslationContext);
+  const { t, currentLang, setCurrentLang } = useContext(TranslationContext);
   const [navbarBgActive, setNavbarBgActive] = useState(false);
 
+  const solutionsItems: SolutionsDropdownItemProps[] = [
+    {
+      key: '01',
+      desciption: 'Lorem ipsum dolor sit amet',
+      title: 'Crie uma Escola Online',
+      icon: EadIcon,
+    },
+    {
+      key: '02',
+      desciption: 'Lorem ipsum dolor sit amet',
+      title: 'Comunidade e rede social',
+      icon: AppIcon,
+    },
+    {
+      key: '03',
+      desciption: 'Lorem ipsum dolor sit amet',
+      title: 'Gamificação',
+      icon: GamificationIcon,
+    },
+    {
+      key: '04',
+      desciption: 'Lorem ipsum dolor sit amet',
+      title: 'Aplicativo mobile',
+      icon: SocialIcon,
+    },
+  ];
+
+  const languagesItems: LanguagesDropdownItemProps[] = [
+    {
+      icon: BrazilIcon,
+      key: '01',
+      title: 'PT',
+      checked: currentLang === 'pt',
+      onClick: () => setCurrentLang('pt'),
+    },
+    {
+      icon: UsaIcon,
+      key: '02',
+      title: 'EN',
+      checked: currentLang === 'en',
+      onClick: () => setCurrentLang('en'),
+    },
+    {
+      icon: SpainIcon,
+      key: '03',
+      title: 'ES',
+      checked: currentLang === 'es',
+      onClick: () => setCurrentLang('es'),
+    },
+  ];
+
   const centerItems: NavItemPropsExtended[] = [
-    { key: '01', text: t('Solutions'), dropdownComponent: EmptyComponent },
+    {
+      key: '01',
+      text: t('Solutions'),
+      dropdownComponent: () => (
+        <SolutionsDropdown items={solutionsItems} title="Soluções principais" />
+      ),
+    },
     { key: '02', text: t('Prices') },
     { key: '03', text: t('Academy') },
     { key: '04', text: t('Blog') },
@@ -26,7 +92,7 @@ const NavBar: React.FC = () => {
     { key: '12', text: t('Start now'), type: 'button' },
     {
       key: '13',
-      dropdownComponent: EmptyComponent,
+      dropdownComponent: () => <LanguagesDropdown items={languagesItems} />,
       text: currentLang.toUpperCase(),
     },
   ];

@@ -28,9 +28,12 @@ const NavItem: React.FC<NavItemProps> = ({
     }
     if (dropdownComponent) {
       return (
-        <span id="dropdown">
-          {text} <ArrowDropIcon />
-        </span>
+        <>
+          <span className="dropdown">
+            {text} <ArrowDropIcon />
+          </span>
+          <div className="dropdown-content">{dropdownComponent({})}</div>
+        </>
       );
     }
     return text;

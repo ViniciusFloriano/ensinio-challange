@@ -18,6 +18,36 @@ export const HeaderContainer = styled('div')`
       width: 45vw;
     }
   }
+
+  @media (max-width: 1120px) {
+    height: 140vh;
+    max-height: 1366px;
+    > div {
+      flex-direction: column;
+
+      #person {
+        align-self: center;
+        width: 60%;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    height: 130vh;
+    max-height: 1124px;
+  }
+  @media (max-width: 720px) {
+    height: 120vh;
+    max-height: 1025px;
+    > div {
+      #person {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 520px) {
+    height: 120vh;
+    max-height: 825px;
+  }
 `;
 
 export const MainContainer = styled('div')`

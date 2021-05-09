@@ -193,6 +193,60 @@
         "en": "See more",
         "es": "Ver más"
       }
+    },
+    {
+      "id": 17,
+      "title": "Main Solutions",
+      "value": {
+        "pt": "Soluções Principais",
+        "en": "Main solutions",
+        "es": "Soluciones principales"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Create an Online School",
+      "value": {
+        "pt": "Crie uma Escola Online",
+        "en": "Create an Online School",
+        "es": "Crea una escuela en línea"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Community and social network",
+      "value": {
+        "pt": "Comunidade e rede social",
+        "en": "Community and social network",
+        "es": "Comunidad y red social"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Gamification",
+      "value": {
+        "pt": "Gamificação",
+        "en": "Gamification",
+        "es": "Gamificación"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Mobile app",
+      "value": {
+        "pt": "Aplicativo mobile",
+        "en": "Mobile app",
+        "es": "Aplicación movil"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Lorem ipsum dolor sit amet",
+      "value": {
+        "pt": "Lorem ipsum dolor sit amet",
+        "en": "Lorem ipsum dolor sit amet",
+        "es": "Lorem ipsum dolor sit amet"
+      }
     }
   ]
 }

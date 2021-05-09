@@ -4,7 +4,7 @@ const Container = styled('div')`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 280px;
+  width: 300px;
   margin: 1rem 0;
 
   img {

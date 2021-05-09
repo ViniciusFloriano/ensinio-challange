@@ -19,7 +19,7 @@ const Container = styled('div')`
   }
   > div {
     text-align: left;
-    width: 580px;
+    width: 620px;
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;

@@ -25,26 +25,26 @@ const NavBar: React.FC = () => {
   const solutionsItems: SolutionsDropdownItemProps[] = [
     {
       key: '01',
-      desciption: 'Lorem ipsum dolor sit amet',
-      title: 'Crie uma Escola Online',
+      desciption: t('Lorem ipsum dolor sit amet'),
+      title: t('Create an Online School'),
       icon: EadIcon,
     },
     {
       key: '02',
-      desciption: 'Lorem ipsum dolor sit amet',
-      title: 'Comunidade e rede social',
+      desciption: t('Lorem ipsum dolor sit amet'),
+      title: t('Community and social network'),
       icon: AppIcon,
     },
     {
       key: '03',
-      desciption: 'Lorem ipsum dolor sit amet',
-      title: 'Gamificação',
+      desciption: t('Lorem ipsum dolor sit amet'),
+      title: t('Gamification'),
       icon: GamificationIcon,
     },
     {
       key: '04',
-      desciption: 'Lorem ipsum dolor sit amet',
-      title: 'Aplicativo mobile',
+      desciption: t('Lorem ipsum dolor sit amet'),
+      title: t('Mobile app'),
       icon: SocialIcon,
     },
   ];
@@ -78,7 +78,7 @@ const NavBar: React.FC = () => {
       key: '01',
       text: t('Solutions'),
       dropdownComponent: () => (
-        <SolutionsDropdown items={solutionsItems} title="Soluções principais" />
+        <SolutionsDropdown items={solutionsItems} title={t('Main Solutions')} />
       ),
     },
     { key: '02', text: t('Prices') },

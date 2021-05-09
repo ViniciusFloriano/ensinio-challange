@@ -7,14 +7,14 @@ const Container = styled('div')`
   flex-direction: column;
   justify-content: center;
 
-  > h3 {
-    text-transform: uppercase;
-  }
-
   #header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    > h3 {
+      text-transform: uppercase;
+    }
   }
 
   > h1 {

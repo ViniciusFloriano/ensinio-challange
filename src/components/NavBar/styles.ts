@@ -5,7 +5,7 @@ import { NavBarProps } from '../../interfaces/stylesInterfaces';
 const NavBarContainer = styled('header')<NavBarProps>`
   position: fixed;
   width: 100%;
-  height: 5.6rem;
+  height: 85px;
   background: ${(props) =>
     props.navbarBgActive
       ? props.theme.colors.backgroundPrimary

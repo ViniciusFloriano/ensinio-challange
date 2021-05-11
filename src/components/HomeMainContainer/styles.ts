@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled('div')`
-  height: 100vh;
+  height: 90vh;
   max-height: 900px;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,9 @@ const Container = styled('div')`
       img {
         margin-right: 15px;
       }
+    }
+    > h4 {
+      text-align: right;
     }
   }
 
@@ -69,15 +72,43 @@ const Container = styled('div')`
     }
   }
 
+  @media (max-width: 1120px) {
+    height: 140vh;
+    max-height: 1366px;
+  }
+  @media (max-width: 900px) {
+    height: 130vh;
+    max-height: 1124px;
+  }
+
   @media (max-width: 720px) {
+    height: 120vh;
+    max-height: 1025px;
     #cards {
       flex-direction: column;
       align-items: center;
       > div {
-        margin-bottom: 2.5rem;
+        margin-bottom: -3rem;
       }
       > div:last-child {
         margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 520px) {
+    height: 120vh;
+    max-height: 825px;
+    #cards {
+      > div {
+        width: 200px;
+      }
+      div:nth-child(even) {
+        align-self: flex-end;
+        text-align: right;
+      }
+      div:nth-child(odd) {
+        align-self: flex-start;
       }
     }
   }

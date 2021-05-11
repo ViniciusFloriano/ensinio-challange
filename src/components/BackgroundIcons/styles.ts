@@ -9,7 +9,7 @@ const Container = styled('div')`
   left: 0;
   top: 50px;
   height: 50px;
-  width: 90vw;
+  width: 95vw;
 
   img {
     position: absolute;
@@ -32,7 +32,7 @@ const Container = styled('div')`
 
   img:nth-child(3) {
     top: -22px;
-    right: 6%;
+    right: 0;
   }
 
   img:nth-child(4) {
@@ -47,6 +47,33 @@ const Container = styled('div')`
     right: 20%;
     height: 70.5px;
     width: 70.5px;
+  }
+
+  @media (max-width: 1120px) {
+    img:nth-child(4) {
+      top: -25px;
+    }
+  }
+  @media (max-width: 720px) {
+    img:nth-child(1),
+    img:nth-child(3) {
+      top: -45px;
+    }
+  }
+  @media (max-width: 520px) {
+    img:nth-child(2) {
+      display: none;
+    }
+    img:nth-child(1) {
+      top: -28px;
+    }
+    img:nth-child(3) {
+      top: -40px;
+    }
+    img:nth-child(4) {
+      top: 15px;
+      left: 40%;
+    }
   }
 `;
 

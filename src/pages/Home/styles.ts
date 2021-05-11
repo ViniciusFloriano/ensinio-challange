@@ -21,6 +21,7 @@ export const HeaderContainer = styled('div')`
 
   @media (max-width: 1120px) {
     height: 140vh;
+    min-height: 980px;
     max-height: 1366px;
     > div {
       flex-direction: column;
@@ -28,6 +29,7 @@ export const HeaderContainer = styled('div')`
       #person {
         align-self: center;
         width: 60%;
+        max-width: 600px;
       }
     }
   }

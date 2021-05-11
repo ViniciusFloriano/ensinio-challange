@@ -20,6 +20,7 @@ const defaultTheme: ThemeProps = {
     buttonHoverBackColor: '#a4c6e9',
   },
   sizes: {
+    xxsmall: '0.92rem',
     xsmall: '1rem',
     small: '1.1rem',
     normal: '1.6rem',

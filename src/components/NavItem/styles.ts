@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const NavItemA = styled('a')`
   padding: 0.2rem 1.2rem;
   color: ${(props) => props.theme.colors.textPrimary};
-  font-size: 0.92rem;
   transition: 0.2s;
 
   &:hover {

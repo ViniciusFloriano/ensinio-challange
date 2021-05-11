@@ -3,9 +3,9 @@ import React, { useContext } from 'react';
 import MultiMedia from '../../assets/icons/multimedia.svg';
 import PlayImage from '../../assets/icons/play.svg';
 import { TranslationContext } from '../../context/TranslationContext';
-import Button from '../Button';
 import Heading from '../Heading';
 import Link from '../Link';
+import PrimaryButton from '../PrimaryButton';
 import Text from '../Text';
 import Container from './styles';
 
@@ -33,7 +33,7 @@ const HomeLeftContainer: React.FC = () => {
         )}
       </Text>
       <div>
-        <Button>{t('Start now')}</Button>
+        <PrimaryButton>{t('Start now')}</PrimaryButton>
         <Link href="asd">
           <img alt="Play" src={PlayImage} />
           {t('Watch video')}

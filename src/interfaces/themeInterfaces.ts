@@ -18,6 +18,7 @@ export interface ThemeProps {
     buttonHoverBackColor?: string;
   };
   sizes: {
+    xxsmall: string | number;
     xsmall: string | number;
     small: string | number;
     normal: string | number;

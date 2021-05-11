@@ -16,6 +16,10 @@ const Link = styled('a')<LinkProps>`
     font-weight: ${fontWeight};
     font-family: ${defaultTheme.fonts[fontFamily]};
     line-height: ${lineHeight};
+
+    &:hover {
+      color: ${(props) => props.theme.colors.textPrimaryHover};
+    }
   `}
 `;
 

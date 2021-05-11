@@ -3,9 +3,8 @@ import styled, { css } from 'styled-components';
 import { ButtonProps } from '../interfaces/stylesInterfaces';
 import defaultTheme from '../styles/themes';
 
-const Button = styled('a')<ButtonProps>`
+const DefaultButton = styled('a')<ButtonProps>`
   ${({
-    color = 'textPrimary',
     fontFamily = 'fontPrimary',
     size = 'small',
     fontWeight = 500,
@@ -23,11 +22,10 @@ const Button = styled('a')<ButtonProps>`
       color: #130c25;
     }
     font-size: ${defaultTheme.sizes[size]};
-    color: ${defaultTheme.colors[color]};
     font-weight: ${fontWeight};
     font-family: ${defaultTheme.fonts[fontFamily]};
     line-height: ${lineHeight};
   `}
 `;
 
-export default Button;
+export default DefaultButton;

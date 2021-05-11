@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ArrowDropIcon from '../../assets/icons/arrow-down';
+import Text from '../Text';
 import { NavItemA, NavItemButton } from './styles';
 
 export interface NavItemProps {
@@ -21,17 +22,17 @@ const NavItem: React.FC<NavItemProps> = ({
   function getChildren() {
     if (leftIcon) {
       return (
-        <span id="icon">
+        <Text id="icon" kind="span" size="xxsmall">
           {leftIcon({})} {text}
-        </span>
+        </Text>
       );
     }
     if (dropdownComponent) {
       return (
         <>
-          <span className="dropdown">
+          <Text className="dropdown" kind="span" size="xxsmall">
             {text} <ArrowDropIcon />
-          </span>
+          </Text>
           <div className="dropdown-content">{dropdownComponent({})}</div>
         </>
       );

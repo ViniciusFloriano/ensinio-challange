@@ -3,7 +3,9 @@ import styled, { css } from 'styled-components';
 import { TextProps } from '../interfaces/stylesInterfaces';
 import defaultTheme from '../styles/themes';
 
-const Text = styled('p')<TextProps>`
+const Text = styled('p').attrs<TextProps>(({ kind = 'p' }) => ({
+  as: `${kind}`,
+}))<TextProps>`
   ${({
     color = 'textPrimary',
     fontFamily = 'fontPrimary',

@@ -1,10 +1,4 @@
-import React, {
-  createContext,
-  Dispatch,
-  SetStateAction,
-  useEffect,
-  useState,
-} from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 
 import { LanguagesProps } from '../interfaces/languageInterfaces';
 import { TranslationProps } from '../interfaces/requestInterfaces';
@@ -16,7 +10,7 @@ interface TranslationContextProps {
   loading: boolean;
   error: boolean;
   currentLang: LanguagesType;
-  setCurrentLang: Dispatch<SetStateAction<keyof LanguagesProps>>;
+  setCurrentLang: (language: LanguagesType) => void;
   t: (title: string) => string;
   translationData: TranslationProps[];
 }
@@ -36,7 +30,7 @@ function useTranslation() {
   const [translationData, setTranslationData] = useState<TranslationProps[]>(
     []
   );
-  const [currentLang, setCurrentLang] = useState<LanguagesType>('pt');
+  const [currentLang, setCurrentLangState] = useState<LanguagesType>('pt');
 
   useEffect(() => {
     getTranslations()
@@ -47,6 +41,21 @@ function useTranslation() {
       .catch(() => {
         setError(true);
       });
+
+    const languageStorage = localStorage.getItem('language');
+
+    if (languageStorage) {
+      setCurrentLangState(JSON.parse(languageStorage));
+    } else {
+      const navigatorLanguage = navigator.language;
+      if (navigatorLanguage.includes('en')) {
+        setCurrentLangState('en');
+      } else if (navigatorLanguage.includes('pt')) {
+        setCurrentLangState('pt');
+      } else if (navigatorLanguage.includes('es')) {
+        setCurrentLangState('es');
+      }
+    }
   }, []);
 
   function t(title: string) {
@@ -59,6 +68,11 @@ function useTranslation() {
     }
 
     return translatedText.value[currentLang];
+  }
+
+  function setCurrentLang(language: LanguagesType) {
+    localStorage.setItem('language', JSON.stringify(language));
+    setCurrentLangState(language);
   }
 
   return { loading, error, currentLang, setCurrentLang, t, translationData };

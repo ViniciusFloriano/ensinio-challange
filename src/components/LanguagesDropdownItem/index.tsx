@@ -18,7 +18,7 @@ const LanguagesDropdownItem: React.FC<LanguagesDropdownItemProps> = ({
   checked = false,
   onClick,
 }) => (
-  <Container checked={checked} onClick={onClick}>
+  <Container aria-hidden="true" checked={checked} onClick={onClick}>
     <img alt={title} src={icon} />
     <Text color="textTertiary" fontWeight={400} size="small">
       {title}

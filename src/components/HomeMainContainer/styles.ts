@@ -6,7 +6,8 @@ const Container = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 1.5rem;
+  margin: 0;
+  margin-top: 1.5rem;
 
   #header {
     display: flex;

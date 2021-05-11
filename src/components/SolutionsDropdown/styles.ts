@@ -29,6 +29,26 @@ const Container = styled('div')`
       width: 100%;
     }
   }
+  @media (max-width: 1220px) {
+    width: 260px;
+    margin: 0 0.3rem;
+    padding: 0;
+    > div {
+      text-align: left;
+      width: 240px;
+      display: flex;
+      justify-content: space-arround;
+      padding: 0 0.5rem;
+      flex-wrap: no-wrap;
+      h1,
+      p {
+        width: 100%;
+      }
+    }
+    h3 {
+      padding-left: 1rem;
+    }
+  }
 `;
 
 export default Container;

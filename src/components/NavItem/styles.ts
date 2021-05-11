@@ -4,8 +4,9 @@ export const NavItemA = styled('a')`
   padding: 0.2rem 1.2rem;
   color: ${(props) => props.theme.colors.textPrimary};
   transition: 0.2s;
+  width: 100%;
 
-  &:hover {
+  s &:hover {
     color: ${(props) => props.theme.colors.textPrimaryHover};
   }
 
@@ -56,6 +57,24 @@ export const NavItemA = styled('a')`
     opacity: 1;
     transition: opacity 1.2s;
   }
+
+  @media (max-width: 1220px) {
+    color: ${(props) => props.theme.colors.textTertiary};
+    padding: 1.2rem 0.2rem;
+    #icon,
+    .dropdown {
+      color: ${(props) => props.theme.colors.textTertiary};
+    }
+    #icon svg {
+      color: ${(props) => props.theme.colors.textTertiary} !important;
+    }
+    .dropdown-content {
+      right: 0;
+      margin: 0;
+      padding: 0;
+      padding-top: 5px;
+    }
+  }
 `;
 
 export const NavItemButton = styled('a')`
@@ -70,5 +89,8 @@ export const NavItemButton = styled('a')`
     border-color: ${(props) => props.theme.colors.buttonHoverBorder};
     background-color: ${(props) => props.theme.colors.buttonHoverBackColor};
     color: #130c25;
+  }
+  @media (max-width: 1220px) {
+    color: ${(props) => props.theme.colors.textTertiary};
   }
 `;

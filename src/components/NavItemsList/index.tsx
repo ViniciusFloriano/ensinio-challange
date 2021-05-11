@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import MenuIcon from '../../assets/icons/menu.svg';
 import NavItem, { NavItemProps } from '../NavItem';
 import NavItemsListContainer from './styles';
 
@@ -17,31 +18,42 @@ const NavItemsList: React.FC<NavItemsListProps> = ({
   logo,
   centerItems,
   rightItems,
-}) => (
-  <NavItemsListContainer>
-    <img alt="logo" src={logo} />
-    <div>
-      <div id="nav-center-items">
-        <ul>
-          {centerItems.map((props) => (
-            <li key={props.key}>
-              <NavItem {...props} />
-            </li>
-          ))}
-        </ul>
+}) => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  return (
+    <NavItemsListContainer toggleMenu={toggleMenu}>
+      <img alt="logo" src={logo} />
+      <nav>
+        <div id="nav-center-items">
+          <ul>
+            {centerItems.map((props) => (
+              <li key={props.key}>
+                <NavItem {...props} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="splitter">&nbsp;</div>
+        <div id="nav-right-items">
+          <ul>
+            {rightItems.map((props) => (
+              <li key={props.key}>
+                <NavItem {...props} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+      <div
+        aria-hidden="true"
+        id="hamburguer-menu"
+        onClick={() => setToggleMenu(!toggleMenu)}
+      >
+        <img alt="Menu" src={MenuIcon} />
       </div>
-      <div className="splitter">&nbsp;</div>
-      <div id="nav-right-items">
-        <ul>
-          {rightItems.map((props) => (
-            <li key={props.key}>
-              <NavItem {...props} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  </NavItemsListContainer>
-);
+    </NavItemsListContainer>
+  );
+};
 
 export default NavItemsList;

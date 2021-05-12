@@ -16,7 +16,7 @@ export const HeaderContainer = styled('div')`
       align-self: flex-end;
       justify-self: flex-end;
       width: 40vw;
-      max-width: 560px;
+      max-width: 700px;
     }
   }
 

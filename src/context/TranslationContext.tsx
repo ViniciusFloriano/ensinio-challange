@@ -37,8 +37,10 @@ function useTranslation() {
       .then((data) => {
         setTranslationData(data);
         setLoading(false);
+        setError(false);
       })
       .catch(() => {
+        setLoading(false);
         setError(true);
       });
 
@@ -79,14 +81,8 @@ function useTranslation() {
 }
 
 const TranslationProvider: React.FC = ({ children }) => {
-  const {
-    loading,
-    error,
-    currentLang,
-    setCurrentLang,
-    t,
-    translationData,
-  } = useTranslation();
+  const { loading, error, currentLang, setCurrentLang, t, translationData } =
+    useTranslation();
 
   return (
     <Context.Provider

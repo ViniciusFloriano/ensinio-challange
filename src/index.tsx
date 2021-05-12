@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 
 import { ThemeProvider } from 'styled-components';
 
-import NavBar from './components/NavBar';
 import { TranslationProvider } from './context/TranslationContext';
 import Routes from './routes';
 import GlobalStyle from './styles/global';
@@ -13,7 +12,6 @@ render(
   <StrictMode>
     <TranslationProvider>
       <ThemeProvider theme={defaultTheme}>
-        <NavBar />
         <Routes />
         <GlobalStyle />
       </ThemeProvider>

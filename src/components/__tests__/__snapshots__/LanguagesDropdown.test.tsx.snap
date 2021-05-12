@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="sc-dlnjwi fEjFgp"
+>
+  <div
+    aria-hidden="true"
+    checked={true}
+    className="sc-gtsrHT jFCtKs"
+    onClick={[Function]}
+  >
+    <img
+      alt="PT"
+      src="BrazilIcon"
+    />
+    <p
+      className="sc-bdnxRM gHVmtO"
+      color="textTertiary"
+      fontWeight={400}
+      size="small"
+    >
+      PT
+    </p>
+    <img
+      alt="PT"
+      src="check.svg"
+    />
+  </div>
+  <div
+    aria-hidden="true"
+    checked={false}
+    className="sc-gtsrHT jDEFIP"
+    onClick={[Function]}
+  >
+    <img
+      alt="EN"
+      src="UsaIcon"
+    />
+    <p
+      className="sc-bdnxRM gHVmtO"
+      color="textTertiary"
+      fontWeight={400}
+      size="small"
+    >
+      EN
+    </p>
+  </div>
+  <div
+    aria-hidden="true"
+    checked={false}
+    className="sc-gtsrHT jDEFIP"
+    onClick={[Function]}
+  >
+    <img
+      alt="ES"
+      src="SpainIcon"
+    />
+    <p
+      className="sc-bdnxRM gHVmtO"
+      color="textTertiary"
+      fontWeight={400}
+      size="small"
+    >
+      ES
+    </p>
+  </div>
+</div>
+`;

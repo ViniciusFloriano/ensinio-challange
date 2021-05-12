@@ -1,0 +1,536 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+Array [
+  <header
+    className="sc-jrsJWt kPSpEw"
+  >
+    <div
+      className="sc-bdnxRM bRYKDy"
+    >
+      <div
+        className="sc-gKAaRy bicxQW"
+      >
+        <img
+          alt="logo"
+          src="logo.svg"
+        />
+        <nav>
+          <div
+            id="nav-center-items"
+          >
+            <ul>
+              <li>
+                <a
+                  className="sc-eCApnc hBtWXp"
+                >
+                  <span
+                    className="sc-gtsrHT lkYkaj dropdown"
+                    kind="span"
+                    size="xxsmall"
+                  >
+                    Solutions
+                     
+                    <svg
+                      fill="#99F3F5"
+                      height="8"
+                      viewBox="0 0 10 8"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.848 6.6432C5.45633 7.26987 4.54367 7.26987 4.152 6.6432L0.956249 1.53C0.539968 0.86395 1.01881 1.68514e-07 1.80425 2.37179e-07L8.19575 7.95942e-07C8.98119 8.64607e-07 9.46003 0.863952 9.04375 1.53L5.848 6.6432Z"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    className="dropdown-content"
+                  >
+                    <div
+                      className="sc-pNWdM gUSWKd"
+                    >
+                      <h3
+                        className="sc-iCoGMd joObkW"
+                        color="linkPrimaryOpacity"
+                        fontFamily="fontSecondary"
+                        fontWeight={500}
+                        letterSpacing="0.12rem"
+                        size="xsmall"
+                      >
+                        Main Solutions
+                      </h3>
+                      <div>
+                        <div
+                          className="sc-fujyAs dZaOPG"
+                        >
+                          <img
+                            alt="Create an Online School"
+                            src="ead.svg"
+                          />
+                          <div>
+                            <h1
+                              className="sc-iCoGMd iSGkav"
+                              color="textTertiary"
+                              size="xsmall"
+                            >
+                              Create an Online School
+                            </h1>
+                            <p
+                              className="sc-gtsrHT jwszLL"
+                              color="textTertiaryOpacity"
+                              fontWeight={400}
+                              size="xsmall"
+                            >
+                              Lorem ipsum dolor sit amet
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          className="sc-fujyAs dZaOPG"
+                        >
+                          <img
+                            alt="Community and social network"
+                            src="icon-app.svg"
+                          />
+                          <div>
+                            <h1
+                              className="sc-iCoGMd iSGkav"
+                              color="textTertiary"
+                              size="xsmall"
+                            >
+                              Community and social network
+                            </h1>
+                            <p
+                              className="sc-gtsrHT jwszLL"
+                              color="textTertiaryOpacity"
+                              fontWeight={400}
+                              size="xsmall"
+                            >
+                              Lorem ipsum dolor sit amet
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          className="sc-fujyAs dZaOPG"
+                        >
+                          <img
+                            alt="Gamification"
+                            src="icon-gamification.svg"
+                          />
+                          <div>
+                            <h1
+                              className="sc-iCoGMd iSGkav"
+                              color="textTertiary"
+                              size="xsmall"
+                            >
+                              Gamification
+                            </h1>
+                            <p
+                              className="sc-gtsrHT jwszLL"
+                              color="textTertiaryOpacity"
+                              fontWeight={400}
+                              size="xsmall"
+                            >
+                              Lorem ipsum dolor sit amet
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          className="sc-fujyAs dZaOPG"
+                        >
+                          <img
+                            alt="Mobile app"
+                            src="icon-social.svg"
+                          />
+                          <div>
+                            <h1
+                              className="sc-iCoGMd iSGkav"
+                              color="textTertiary"
+                              size="xsmall"
+                            >
+                              Mobile app
+                            </h1>
+                            <p
+                              className="sc-gtsrHT jwszLL"
+                              color="textTertiaryOpacity"
+                              fontWeight={400}
+                              size="xsmall"
+                            >
+                              Lorem ipsum dolor sit amet
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="sc-eCApnc hBtWXp"
+                >
+                  Prices
+                </a>
+              </li>
+              <li>
+                <a
+                  className="sc-eCApnc hBtWXp"
+                >
+                  Academy
+                </a>
+              </li>
+              <li>
+                <a
+                  className="sc-eCApnc hBtWXp"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  className="sc-eCApnc hBtWXp"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="splitter"
+          >
+             
+          </div>
+          <div
+            id="nav-right-items"
+          >
+            <ul>
+              <li
+                data-testid="nav-item-right-11"
+              >
+                <a
+                  className="sc-eCApnc hBtWXp"
+                >
+                  <span
+                    className="sc-gtsrHT lkYkaj"
+                    id="icon"
+                    kind="span"
+                    size="xxsmall"
+                  >
+                    <svg
+                      fill="none"
+                      height="20"
+                      stroke="#99F3F5"
+                      viewBox="0 0 20 20"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M5 15.4866C6.3075 14.2157 8.07667 13.4341 10.0192 13.4341C11.9425 13.4341 13.6925 14.1999 15 15.4474C13.6925 16.7182 11.9233 17.4999 9.98083 17.4999C8.0575 17.4999 6.3075 16.7341 5 15.4866Z"
+                        fillRule="evenodd"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M3.3125 13.3542C2.80417 12.3425 2.5 11.21 2.5 10C2.5 5.855 5.855 2.5 10 2.5C14.145 2.5 17.5 5.855 17.5 10C17.5 11.2083 17.1975 12.3417 16.6858 13.3525"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M11.7678 6.56573C12.7441 7.54204 12.7441 9.12495 11.7678 10.1013C10.7915 11.0776 9.20854 11.0776 8.23223 10.1013C7.25592 9.12495 7.25592 7.54204 8.23223 6.56573C9.20854 5.58942 10.7915 5.58942 11.7678 6.56573"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                     
+                    Sing On
+                  </span>
+                </a>
+              </li>
+              <li
+                data-testid="nav-item-right-12"
+              >
+                <a
+                  className="sc-jSFjdj UepUh"
+                >
+                  Start now
+                </a>
+              </li>
+              <li
+                data-testid="nav-item-right-13"
+              >
+                <a
+                  className="sc-eCApnc hBtWXp"
+                >
+                  <span
+                    className="sc-gtsrHT lkYkaj dropdown"
+                    kind="span"
+                    size="xxsmall"
+                  >
+                    PT
+                     
+                    <svg
+                      fill="#99F3F5"
+                      height="8"
+                      viewBox="0 0 10 8"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.848 6.6432C5.45633 7.26987 4.54367 7.26987 4.152 6.6432L0.956249 1.53C0.539968 0.86395 1.01881 1.68514e-07 1.80425 2.37179e-07L8.19575 7.95942e-07C8.98119 8.64607e-07 9.46003 0.863952 9.04375 1.53L5.848 6.6432Z"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    className="dropdown-content"
+                  >
+                    <div
+                      className="sc-hKFxyN kesLzR"
+                    >
+                      <div
+                        aria-hidden="true"
+                        checked={true}
+                        className="sc-dlnjwi giMfzk"
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="PT"
+                          src="brazil.svg"
+                        />
+                        <p
+                          className="sc-gtsrHT kuwjhP"
+                          color="textTertiary"
+                          fontWeight={400}
+                          size="small"
+                        >
+                          PT
+                        </p>
+                        <img
+                          alt="PT"
+                          src="check.svg"
+                        />
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        checked={false}
+                        className="sc-dlnjwi jpqoUf"
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="EN"
+                          src="usa.svg"
+                        />
+                        <p
+                          className="sc-gtsrHT kuwjhP"
+                          color="textTertiary"
+                          fontWeight={400}
+                          size="small"
+                        >
+                          EN
+                        </p>
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        checked={false}
+                        className="sc-dlnjwi jpqoUf"
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="ES"
+                          src="spain.svg"
+                        />
+                        <p
+                          className="sc-gtsrHT kuwjhP"
+                          color="textTertiary"
+                          fontWeight={400}
+                          size="small"
+                        >
+                          ES
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div
+          aria-hidden="true"
+          id="hamburguer-menu"
+          onClick={[Function]}
+        >
+          <img
+            alt="Menu"
+            src="menu.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </header>,
+  <div
+    className="sc-hBMUJo gDbAVQ"
+  >
+    <div
+      className="sc-bdnxRM bRYKDy"
+    >
+      <div
+        className="sc-dIsUp iBnizG"
+      >
+        <h3
+          className="sc-iCoGMd iZeYXT"
+          color="textSecondary"
+          fontFamily="fontSecondary"
+          fontWeight={500}
+          letterSpacing="0.18rem"
+          size="xsmall"
+        >
+          <img
+            alt="MultiMedia"
+            src="multimedia.svg"
+          />
+          All in one platform
+        </h3>
+        <h1
+          className="sc-iCoGMd iMbQns"
+          fontWeight={500}
+          size="large"
+        >
+          Your powerful and profitable online school
+        </h1>
+        <p
+          className="sc-gtsrHT jGNZcA"
+          size="small"
+        >
+          Have your own 100% white label online school with social network, gamification, subscription club, ecommerce and complete ODL system.
+        </p>
+        <div>
+          <a
+            className="sc-crzoAE jOzLlm"
+          >
+            Start now
+          </a>
+          <a
+            className="sc-iqAclL hLKNGr"
+            href="asd"
+          >
+            <img
+              alt="Play"
+              src="play.svg"
+            />
+            Watch video
+          </a>
+        </div>
+      </div>
+      <img
+        alt="person"
+        id="person"
+        src="person.png"
+      />
+    </div>
+    <div
+      className="sc-kEqXSa jAVFc"
+    >
+      <img
+        alt="Video"
+        src="icon-playlists-first.svg"
+      />
+      <img
+        alt="Video"
+        src="icon-playlists-first.svg"
+      />
+      <img
+        alt="Video"
+        src="icon-playlists.svg"
+      />
+      <img
+        alt="Certified"
+        src="icon-certified.svg"
+      />
+      <img
+        alt="Transcript"
+        src="icon-transcription.svg"
+      />
+    </div>
+  </div>,
+  <div
+    className="sc-fnVZcZ jKtria"
+  >
+    <div
+      className="sc-bdnxRM bRYKDy"
+    >
+      <div
+        className="sc-ksluID wqWcp"
+      >
+        <div
+          id="header"
+        >
+          <h3
+            className="sc-iCoGMd joObkW"
+            color="linkPrimaryOpacity"
+            fontFamily="fontSecondary"
+            fontWeight={500}
+            letterSpacing="0.12rem"
+            size="xsmall"
+          >
+            <img
+              alt="Line"
+              src="line.svg"
+            />
+            We think about every detail
+          </h3>
+          <h4
+            className="sc-iCoGMd kvJfqf"
+            color="textTertiaryOpacity"
+            fontWeight={400}
+            size="xsmall"
+          >
+            Discover some of our resources
+             ⚡
+          </h4>
+        </div>
+        <h1
+          className="sc-iCoGMd ZSGqi"
+          color="textTertiary"
+          fontWeight={500}
+        >
+          We want the student to feel comfortable while learning
+        </h1>
+        <div
+          id="cards"
+        />
+        <hr />
+        <div
+          id="footer"
+        >
+          <p
+            className="sc-gtsrHT hDGEre"
+            color="textTertiaryOpacity"
+            fontWeight={500}
+            size="xsmall"
+          >
+            <img
+              alt="Rocket"
+              src="rocket.svg"
+            />
+            See all other resources available to help you
+          </p>
+          <a
+            className="sc-iqAclL IGQit"
+            color="linkPrimary"
+            fontWeight={500}
+            href="#vermais"
+            size="xsmall"
+          >
+            See more
+            <img
+              alt="Arrow Right"
+              src="arrow-right.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

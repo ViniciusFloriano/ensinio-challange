@@ -38,7 +38,7 @@ const NavItemsList: React.FC<NavItemsListProps> = ({
         <div id="nav-right-items">
           <ul>
             {rightItems.map((props) => (
-              <li key={props.key}>
+              <li data-testid={`nav-item-right-${props.key}`} key={props.key}>
                 <NavItem {...props} />
               </li>
             ))}

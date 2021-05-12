@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="sc-hKFxyN YvNCz"
+>
+  <h3
+    className="sc-bdnxRM gLMxZa"
+    color="linkPrimaryOpacity"
+    fontFamily="fontSecondary"
+    fontWeight={500}
+    letterSpacing="0.12rem"
+    size="xsmall"
+  >
+    Solutions Dropdown
+  </h3>
+  <div>
+    <div
+      className="sc-dlnjwi yojSu"
+    >
+      <img
+        alt="Create an Online School"
+        src="EadIcon"
+      />
+      <div>
+        <h1
+          className="sc-bdnxRM jfpdHn"
+          color="textTertiary"
+          size="xsmall"
+        >
+          Create an Online School
+        </h1>
+        <p
+          className="sc-gtsrHT jwszLL"
+          color="textTertiaryOpacity"
+          fontWeight={400}
+          size="xsmall"
+        >
+          Lorem ipsum dolor sit amet
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-dlnjwi yojSu"
+    >
+      <img
+        alt="Community and social network"
+        src="AppIcon"
+      />
+      <div>
+        <h1
+          className="sc-bdnxRM jfpdHn"
+          color="textTertiary"
+          size="xsmall"
+        >
+          Community and social network
+        </h1>
+        <p
+          className="sc-gtsrHT jwszLL"
+          color="textTertiaryOpacity"
+          fontWeight={400}
+          size="xsmall"
+        >
+          Lorem ipsum dolor sit amet
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-dlnjwi yojSu"
+    >
+      <img
+        alt="Gamification"
+        src="GamificationIcon"
+      />
+      <div>
+        <h1
+          className="sc-bdnxRM jfpdHn"
+          color="textTertiary"
+          size="xsmall"
+        >
+          Gamification
+        </h1>
+        <p
+          className="sc-gtsrHT jwszLL"
+          color="textTertiaryOpacity"
+          fontWeight={400}
+          size="xsmall"
+        >
+          Lorem ipsum dolor sit amet
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-dlnjwi yojSu"
+    >
+      <img
+        alt="Mobile app"
+        src="SocialIcon"
+      />
+      <div>
+        <h1
+          className="sc-bdnxRM jfpdHn"
+          color="textTertiary"
+          size="xsmall"
+        >
+          Mobile app
+        </h1>
+        <p
+          className="sc-gtsrHT jwszLL"
+          color="textTertiaryOpacity"
+          fontWeight={400}
+          size="xsmall"
+        >
+          Lorem ipsum dolor sit amet
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

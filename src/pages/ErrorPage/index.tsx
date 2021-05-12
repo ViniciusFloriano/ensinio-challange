@@ -6,13 +6,13 @@ import Container from './styles';
 const ErrorPage: React.FC = () => (
   <Container>
     <Heading color="primary" size="xlarge">
-      Desculpe
+      Sorry
     </Heading>
     <Heading color="primary" size="large">
       : (
     </Heading>
     <Heading color="secondary" size="small">
-      Occoreu um erro! Tente entrar em contato com o suporte
+      An error has occurred! Try to contact support ...
     </Heading>
   </Container>
 );

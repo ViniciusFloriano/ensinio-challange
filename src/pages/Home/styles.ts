@@ -15,7 +15,8 @@ export const HeaderContainer = styled('div')`
     #person {
       align-self: flex-end;
       justify-self: flex-end;
-      width: 45vw;
+      width: 40vw;
+      max-width: 560px;
     }
   }
 
@@ -29,7 +30,7 @@ export const HeaderContainer = styled('div')`
       #person {
         align-self: center;
         width: 60%;
-        max-width: 600px;
+        max-width: 700px;
       }
     }
   }
@@ -37,6 +38,9 @@ export const HeaderContainer = styled('div')`
   @media (max-width: 900px) {
     height: 130vh;
     max-height: 1124px;
+    #person {
+      max-width: 600px;
+    }
   }
 
   @media (max-width: 720px) {
@@ -44,7 +48,7 @@ export const HeaderContainer = styled('div')`
     max-height: 1025px;
     > div {
       #person {
-        width: 100%;
+        width: 90%;
       }
     }
   }
@@ -52,6 +56,9 @@ export const HeaderContainer = styled('div')`
   @media (max-width: 520px) {
     height: 120vh;
     max-height: 825px;
+    #person {
+      width: 90%;
+    }
   }
 `;
 

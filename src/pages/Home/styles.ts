@@ -33,10 +33,12 @@ export const HeaderContainer = styled('div')`
       }
     }
   }
+
   @media (max-width: 900px) {
     height: 130vh;
     max-height: 1124px;
   }
+
   @media (max-width: 720px) {
     height: 120vh;
     max-height: 1025px;
@@ -46,6 +48,7 @@ export const HeaderContainer = styled('div')`
       }
     }
   }
+
   @media (max-width: 520px) {
     height: 120vh;
     max-height: 825px;

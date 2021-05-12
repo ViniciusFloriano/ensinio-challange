@@ -41,7 +41,13 @@ const NavItem: React.FC<NavItemProps> = ({
   }
 
   if (type === 'default') {
-    return <NavItemA href={to}>{getChildren()}</NavItemA>;
+    return (
+      <NavItemA href={to}>
+        <Text className="dropdown" kind="span" size="xxsmall">
+          {getChildren()}
+        </Text>
+      </NavItemA>
+    );
   }
   return <NavItemButton href={to}>{text}</NavItemButton>;
 };

@@ -6,7 +6,7 @@ export const NavItemA = styled('a')`
   transition: 0.2s;
   width: 100%;
 
-  s &:hover {
+  &:hover {
     color: ${(props) => props.theme.colors.textPrimaryHover};
   }
 
@@ -34,10 +34,12 @@ export const NavItemA = styled('a')`
   .dropdown svg {
     margin-left: 0.4rem;
     height: 0.55rem;
+    transition: 0.2s;
   }
 
   &:hover .dropdown > svg {
     fill: ${(props) => props.theme.colors.textPrimaryHover};
+    transform: rotate(-180deg);
   }
 
   .dropdown-content {
@@ -66,13 +68,19 @@ export const NavItemA = styled('a')`
       color: ${(props) => props.theme.colors.textTertiary};
     }
     #icon svg {
-      color: ${(props) => props.theme.colors.textTertiary} !important;
+      stroke: ${(props) => props.theme.colors.textTertiary} !important;
+    }
+    .dropdown > svg {
+      fill: ${(props) => props.theme.colors.textTertiary};
     }
     .dropdown-content {
-      right: 0;
-      margin: 0;
+      width: 270px;
+      right: 0px;
       padding: 0;
       padding-top: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 `;
@@ -90,7 +98,11 @@ export const NavItemButton = styled('a')`
     background-color: ${(props) => props.theme.colors.buttonHoverBackColor};
     color: #130c25;
   }
+
   @media (max-width: 1220px) {
     color: ${(props) => props.theme.colors.textTertiary};
+  }
+  @media (max-width: 720px) {
+    width: 20px;
   }
 `;

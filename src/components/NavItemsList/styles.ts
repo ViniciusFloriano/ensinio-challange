@@ -32,7 +32,7 @@ const NavItemsListContainer = styled('div')<NavItemsListContainerProps>`
     height: 30px;
     width: 30px;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.6s;
   }
   #hamburguer-menu:hover {
     opacity: 0.7;
@@ -71,15 +71,18 @@ const NavItemsListContainer = styled('div')<NavItemsListContainerProps>`
       width: 0;
       margin: 1rem 0;
     }
+
     > nav {
       flex-direction: column;
       align-items: center;
+      justify-content: flex-start;
       position: absolute;
       right: ${(props) => (props.toggleMenu ? '0' : '-1000px')};
       top: 85px;
       height: 100vh;
       width: 250px;
       border-radius: 15px 0 0 0;
+      border-left: 1px solid ${(props) => props.theme.colors.primary};
       padding: 20px 10px;
       background-color: ${(props) => props.theme.colors.backgroundSecondary};
       transition: 0.6s;
@@ -87,9 +90,17 @@ const NavItemsListContainer = styled('div')<NavItemsListContainerProps>`
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 200px;
       }
     }
+
+    #nav-center-items ul {
+      height: 200px !important;
+    }
+
+    #nav-right-items ul {
+      height: 140px !important;
+    }
+
     #nav-center-items ul li a {
       padding: 1.6rem 0;
     }
@@ -101,8 +112,21 @@ const NavItemsListContainer = styled('div')<NavItemsListContainerProps>`
     ul li {
       display: block;
     }
+
     #hamburguer-menu {
       display: block;
+    }
+  }
+
+  @media (max-width: 770px) {
+    width: 90vw;
+    > nav {
+      width: 180px;
+    }
+
+    #nav-right-items ul li a:hover .dropdown-content {
+      margin-top: -140px;
+      width: 200px;
     }
   }
 `;

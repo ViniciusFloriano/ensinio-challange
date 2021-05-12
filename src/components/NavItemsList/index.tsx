@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import CloseIcon from '../../assets/icons/close.svg';
 import MenuIcon from '../../assets/icons/menu.svg';
 import NavItem, { NavItemProps } from '../NavItem';
 import NavItemsListContainer from './styles';
@@ -50,7 +51,7 @@ const NavItemsList: React.FC<NavItemsListProps> = ({
         id="hamburguer-menu"
         onClick={() => setToggleMenu(!toggleMenu)}
       >
-        <img alt="Menu" src={MenuIcon} />
+        <img alt="Menu" src={toggleMenu ? CloseIcon : MenuIcon} />
       </div>
     </NavItemsListContainer>
   );
